@@ -1,0 +1,14 @@
+<%@posts.each do |post|%>
+    <article class="blog-post">
+        <h2>WEB DEVELOPMENT</h2>
+        <h3><%= post.title%> </h3>
+        <ul class="tags">
+            <li>By <b><%= post.author%> </b></li>
+            <li>March 30, 2020</li>
+            <li>6 comments</li>
+        </ul>
+        <img src="<%= post.image%>" alt="">
+        <p><%= post.body%> </p>
+        <a href="#">Read more</a>
+    </article>
+<%end%>
